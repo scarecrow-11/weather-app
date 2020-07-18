@@ -4,7 +4,7 @@ import axios from 'axios'
 export const getCurrentWeather = location => dispatch => {
 
     // Get Current Weather Info From OpenWeatherMap API
-    const API_KEY = process.env.REACT_APP_WEATHER_API_KEY
+    const API_KEY = "273621dc4fea8dbae65006264c8526eb"
     const units = "metric"
     const apiURL = "https://api.openweathermap.org/data/2.5/weather?q="+location.city+"&units="+units+"&appid="+API_KEY
 
